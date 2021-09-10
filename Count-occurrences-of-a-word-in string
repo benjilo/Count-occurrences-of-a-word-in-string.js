@@ -1,0 +1,21 @@
+function countWords(str, word){
+
+    //var declared
+let b = str.split (" ");
+
+let count = 0;
+
+for (let i = 0; i < b.length; i++)
+{
+if(word == (b[i]))
+count++;
+}
+
+return count;
+
+}
+
+let str = 'Hello Benjamin, welcome to bmw mobile  app shanghai team and happy coding for bmw mobile connected app.';
+let word = 'Hello';
+
+console.log(countWords(str, word));
